@@ -1,0 +1,142 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-color: navy;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: honeydew;
+    width: 90vw;
+}
+main{
+    background-color: honeydew;
+    width: 90vw;
+    height: 100%;
+}
+.chart{
+    position: relative;
+    left: 10%;
+    opacity: 0;
+}
+.main_target{
+    background-color: tomato;
+    position: relative;
+    opacity: 1;
+    font: weight 1200;
+}
+.sub_target1{
+    background-color:peru;
+    /* opacity: 0.8; */
+}
+.sub_target2{
+    background-color: darkturquoise;
+    /* opacity: 0.8; */
+}
+.sub_target3{
+    background-color: mediumorchid;
+    /* opacity: 0.8; */
+}
+.sub_target4{
+    background-color: gold;
+    /* opacity: 0.8; */
+}
+.sub_target5{
+    background-color:orange;
+    /* opacity: 0.8; */
+}
+.sub_target6{
+    background-color: violet;
+    /* opacity: 0.8; */
+}
+.sub_target7{
+    background-color:chartreuse;
+    /* opacity: 0.8; */
+}
+.sub_target8{
+    background-color:wheat;
+    /* opacity: 0.8; */
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+table{
+    width: calc(100% / 3);
+}
+td{
+    background-color: ghostwhite;
+    border: solid 0.1px;
+    width: calc(100% / 9) ;
+    height: calc(100% / 9) ;
+}
+table:hover{
+    background: #0066CC;
+    transform: scale(1.5);
+    /* color:#fff; */
+}
+td:hover{
+    background: #0066CC;
+    transform: scale(1.5);
+    /* color:#fff; */
+}
+textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;          
+  box-sizing: border-box;   /* 横にはみ出ないように */
+  background-color: ghostwhite;
+  border: none;
+  font-size: 10px;
+  text-align: center;
+
+}
+
+ul{
+    padding-top: 5%;
+    /* border-top: 1px solid #000000; */
+    /* display:table;   */
+    /* table-layout: fixed; */
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    /* flex-direction: column; */
+}
+
+li{
+    list-style-type:none;
+    border: 1px solid #666;
+    background-color: #FFF;
+    /* display:table-cell;  定義 */
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; 
+    flex-direction: column; */
+}
+li:hover{
+    background: #0066CC;
+    color:#fff;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: honeydew;
+    width:90vw;
+}
