@@ -1,0 +1,13 @@
+{
+    "root": {
+        "data": {
+            "id": "c74pw7rl6nc0",
+            "created": 1605532847320,
+            "text": "mindset"
+        },
+        "children": []
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
