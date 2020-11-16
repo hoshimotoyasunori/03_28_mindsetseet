@@ -13,7 +13,7 @@
         <h1>MINDset(マンダラチャート)</h1>
         <a class="chart" href="chart.html">chart</a>
     </header>
-    <main>
+    <main id="data">
         <div class="box">
             <!-- 表の上の列-->
             <table>
@@ -202,19 +202,18 @@
             </table>
         </div>
         <ul>
-            <li id="save">保存</li>
-            <li id="clear">消去</li>
+            <li id="clear">All Clear</li>
         </ul>
 
     </main>
     <footer><small>G's Academy</small></footer>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script> -->
     <script>
         /////////////////////////////// main_target//////////////////////////////////
         $(function () {
             //1.Save クリックイベント
-            $('#save').on('click', function () {
+            $('textarea').keyup(function () {
                 // const text = $('#main_target').val();
                 const data = {
                     main: $('#main_target').val(),

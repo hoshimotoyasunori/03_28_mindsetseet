@@ -120,7 +120,7 @@ li{
     background-color: #FFF;
     /* display:table-cell;  定義 */
     cursor: pointer;
-    width: 100%;
+    width: 30%;
     height: 100%;
     display: flex;
     justify-content: center;
