@@ -10,13 +10,50 @@
 
 <body>
     <header>
-        <h1>MINDset(マンダラチャート)</h1>
-        <a class="chart" href="chart.html">chart</a>
+        <h1><textarea id="title" class="main_title" type="text" placeholder="TARGET" autofocus
+                style="border: none;"></textarea></h1>
+        <!-- <h1><input id="title" class="main_title" type="text" placeholder="TARGET" autofocus style="border: none;"></h1> -->
+        <ul>
+
+            <li>
+                <div id="btn1"><input class="b" type="button" value="Next"
+                        onclick="document.getElementById('center_center').style.display='block';document.getElementById('btn1').style.display='none';document.getElementById('btn2').style.display='block';">
+                </div>
+                <div id="btn2"><input class="b" type="button" value="Next"
+                        onclick="document.getElementById('top_center').style.display='block';document.getElementById('btn2').style.display='none';document.getElementById('btn3').style.display='block';">
+                </div>
+                <div id="btn3"><input class="b" type="button" value="Next"
+                        onclick="document.getElementById('top_left').style.display='block';document.getElementById('btn3').style.display='none';document.getElementById('btn4').style.display='block';">
+                </div>
+                <div id="btn4"><input class="b" type="button" value="Next"
+                        onclick="document.getElementById('top_right').style.display='block';document.getElementById('btn4').style.display='none';document.getElementById('btn5').style.display='block';">
+                </div>
+                <div id="btn5"><input class="b" type="button" value="Next"
+                        onclick="document.getElementById('center_left').style.display='block';document.getElementById('btn5').style.display='none';document.getElementById('btn6').style.display='block';">
+                </div>
+                <div id="btn6"><input class="b" type="button" value="Next"
+                        onclick="document.getElementById('center_right').style.display='block';document.getElementById('btn6').style.display='none';document.getElementById('btn7').style.display='block';">
+                </div>
+                <div id="btn7"><input class="b" type="button" value="Next"
+                        onclick="document.getElementById('bottom_center').style.display='block';document.getElementById('btn7').style.display='none';document.getElementById('btn8').style.display='block';">
+                </div>
+                <div id="btn8"><input class="b" type="button" value="Next"
+                        onclick="document.getElementById('bottom_left').style.display='block';document.getElementById('btn8').style.display='none';document.getElementById('btn9').style.display='block';">
+                </div>
+                <div id="btn9"><input class="b" type="button" value="Next"
+                        onclick="document.getElementById('bottom_right').style.display='block';document.getElementById('btn9').style.display='none';document.getElementById('btn10').style.display='block';">
+                </div>
+                <div id="btn10">
+                    <article><a href="chart.html" class="navigate-anchor">NEXT</a></article>
+                </div>
+            <li id="clear">All Clear</li>
+            </li>
+        </ul>
     </header>
     <main id="data">
         <div class="box">
             <!-- 表の上の列-->
-            <table>
+            <table id="top_left">
                 <!-- 表の上の左-->
                 <tr>
                     <td><textarea id="sub_1_1"></textarea></td>
@@ -36,7 +73,7 @@
                     <td><textarea id="sub_1_8"></textarea></td>
                 </tr>
             </table>
-            <table>
+            <table id="top_center">
                 <!-- 表の上の真ん中-->
                 <tr>
                     <td><textarea id="sub_2_1"></textarea></td>
@@ -55,7 +92,7 @@
                     <td><textarea id="sub_2_8"></textarea></td>
                 </tr>
             </table>
-            <table>
+            <table id="top_right">
                 <!-- 表の上の右-->
                 <tr>
                     <td><textarea id="sub_3_1"></textarea></td>
@@ -76,7 +113,7 @@
         </div>
         <div class="box">
             <!-- 表の2番目の列-->
-            <table>
+            <table id="center_left">
                 <!-- 表の2番目の左-->
                 <tr>
                     <td><textarea id="sub_4_1"></textarea></td>
@@ -96,35 +133,43 @@
                     <td><textarea id="sub_4_8"></textarea></td>
                 </tr>
             </table>
-            <table>
+            <table id="center_center">
                 <!-- 表の2番目の真ん中-->
                 <tr>
-                    <td class="sub_target1"><textarea id="sub_target1" class="sub_target1" placeholder="目標"></textarea>
+                    <td id="sub1" class="sub_target1"><textarea id="sub_target1" class="sub_target1"
+                            placeholder="目標"></textarea>
                     </td>
-                    <td class="sub_target2"><textarea id="sub_target2" class="sub_target2" placeholder="目標"></textarea>
+                    <td id="sub2" class="sub_target2"><textarea id="sub_target2" class="sub_target2"
+                            placeholder="目標"></textarea>
                     </td>
-                    <td class="sub_target3"><textarea id="sub_target3" class="sub_target3" placeholder="目標"></textarea>
+                    <td id="sub3" class="sub_target3"><textarea id="sub_target3" class="sub_target3"
+                            placeholder="目標"></textarea>
                     </td>
                 </tr>
                 <tr>
-                    <td class="sub_target4"><textarea id="sub_target4" class="sub_target4" placeholder="目標"></textarea>
+                    <td id="sub4" class="sub_target4"><textarea id="sub_target4" class="sub_target4"
+                            placeholder="目標"></textarea>
                     </td>
                     <td class="main_target"><textarea id="main_target" class="main_target" placeholder="目的"
                             autofocus></textarea>
                     </td>
-                    <td class="sub_target5"><textarea id="sub_target5" class="sub_target5" placeholder="目標"></textarea>
+                    <td id="sub5" class="sub_target5"><textarea id="sub_target5" class="sub_target5"
+                            placeholder="目標"></textarea>
                     </td>
                 </tr>
                 <tr>
-                    <td class="sub_target6"><textarea id="sub_target6" class="sub_target6" placeholder="目標"></textarea>
+                    <td id="sub6" class="sub_target6"><textarea id="sub_target6" class="sub_target6"
+                            placeholder="目標"></textarea>
                     </td>
-                    <td class="sub_target7"><textarea id="sub_target7" class="sub_target7" placeholder="目標"></textarea>
+                    <td id="sub7" class="sub_target7"><textarea id="sub_target7" class="sub_target7"
+                            placeholder="目標"></textarea>
                     </td>
-                    <td class="sub_target8"><textarea id="sub_target8" class="sub_target8" placeholder="目標"></textarea>
+                    <td id="sub8" class="sub_target8"><textarea id="sub_target8" class="sub_target8"
+                            placeholder="目標"></textarea>
                     </td>
                 </tr>
             </table>
-            <table>
+            <table id="center_right">
                 <!-- 表の2番目の右-->
                 <tr>
                     <td><textarea id="sub_5_1"></textarea></td>
@@ -144,7 +189,7 @@
         </div>
         <div class="box">
             <!-- 表の3番目の列-->
-            <table>
+            <table id="bottom_left">
                 <!-- 表の3番目の左-->
                 <tr>
                     <td><textarea id="sub_6_1"></textarea></td>
@@ -162,7 +207,7 @@
                     <td><textarea id="sub_6_8"></textarea></td>
                 </tr>
             </table>
-            <table>
+            <table id="bottom_center">
                 <!-- 表の3番目の真ん中-->
                 <tr>
                     <td><textarea id="sub_7_1"></textarea></td>
@@ -181,7 +226,7 @@
                     <td><textarea id="sub_7_8"></textarea></td>
                 </tr>
             </table>
-            <table>
+            <table id="bottom_right">
                 <!-- 表の3番目の右-->
                 <tr>
                     <td><textarea id="sub_8_1"></textarea></td>
@@ -201,21 +246,79 @@
                 </tr>
             </table>
         </div>
-        <ul>
-            <li id="clear">All Clear</li>
-        </ul>
+
+        <!-- <div class="button">
+            <div id="btn_1"><input id="btn1" type="button" value="Next"
+                    onclick="document.getElementById('sub1').style.display='block';document.getElementById('btn_1').style.display='none';document.getElementById('btn_2').style.display='block';" /><br />
+            </div>
+            <div id="btn_2"><input id="btn2" type="button" value="Next"
+                    onclick="document.getElementById('sub2').style.display='block';document.getElementById('btn_2').style.display='none';document.getElementById('btn_3').style.display='block';" /><br />
+            </div>
+            <div id="btn_3"><input id="btn3" type="button" value="Next"
+                    onclick="document.getElementById('sub3').style.display='block';document.getElementById('btn_3').style.display='none';document.getElementById('btn_4').style.display='block';" /><br />
+            </div>
+            <div id="btn_4"><input id="btn4" type="button" value="Next"
+                    onclick="document.getElementById('sub4').style.display='block';document.getElementById('btn_4').style.display='none';document.getElementById('btn_5').style.display='block';" /><br />
+            </div>
+            <div id="btn_5"><input id="btn5" type="button" value="Next"
+                    onclick="document.getElementById('sub5').style.display='block';document.getElementById('btn_5').style.display='none';document.getElementById('btn_6').style.display='block';" /><br />
+            </div>
+            <div id="btn_6"><input id="btn6" type="button" value="Next"
+                    onclick="document.getElementById('sub6').style.display='block';document.getElementById('btn_6').style.display='none';document.getElementById('btn_7').style.display='block';" /><br />
+            </div>
+            <div id="btn_7"><input id="btn7" type="button" value="Next"
+                    onclick="document.getElementById('sub7').style.display='block';document.getElementById('btn_7').style.display='none';document.getElementById('btn_8').style.display='block';" /><br />
+            </div>
+            <div id="btn_8"><input id="btn8" type="button" value="Next"
+                    onclick="document.getElementById('sub8').style.display='block';document.getElementById('btn_8').style.display='none';" /><br />
+            </div>
+        </div> -->
 
     </main>
-    <footer><small>G's Academy</small></footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script> -->
     <script>
+
+        document.getElementById("center_center").style.display = "none";
+        document.getElementById("top_left").style.display = "none";
+        document.getElementById("top_center").style.display = "none";
+        document.getElementById("top_right").style.display = "none";
+        document.getElementById("center_left").style.display = "none";
+        document.getElementById("center_right").style.display = "none";
+        document.getElementById("bottom_left").style.display = "none";
+        document.getElementById("bottom_center").style.display = "none";
+        document.getElementById("bottom_right").style.display = "none";
+
+        // document.getElementById("sub1").style.display = "none";
+        // document.getElementById("sub2").style.display = "none";
+        // document.getElementById("sub3").style.display = "none";
+        // document.getElementById("sub4").style.display = "none";
+        // document.getElementById("sub5").style.display = "none";
+        // document.getElementById("sub6").style.display = "none";
+        // document.getElementById("sub7").style.display = "none";
+        // document.getElementById("sub8").style.display = "none";
+
+        document.getElementById("btn2").style.display = "none";
+        document.getElementById("btn3").style.display = "none";
+        document.getElementById("btn4").style.display = "none";
+        document.getElementById("btn5").style.display = "none";
+        document.getElementById("btn6").style.display = "none";
+        document.getElementById("btn7").style.display = "none";
+        document.getElementById("btn8").style.display = "none";
+        document.getElementById("btn9").style.display = "none";
+        document.getElementById("btn10").style.display = "none";
+        // document.getElementById("btn10").style.display = "none";
+
+
+
         /////////////////////////////// main_target//////////////////////////////////
         $(function () {
             //1.Save クリックイベント
             $('textarea').keyup(function () {
                 // const text = $('#main_target').val();
                 const data = {
+                    title: $('#title').val(),
                     main: $('#main_target').val(),
                     sub1: $('#sub_target1').val(),
                     sub2: $('#sub_target2').val(),
@@ -308,6 +411,7 @@
             //2.clear クリックイベント
             $('#clear').on('click', function () {
                 localStorage.removeItem('memo');
+                $('#title').val('')
                 $('#main_target').val('')
                 $('#sub_target1').val('')
                 $('#sub_target2').val('')
@@ -397,7 +501,8 @@
                 console.log(jasonData);
                 const data = JSON.parse(jasonData);
                 console.log(data);
-                $('#main_target').val(data.main);
+                $('#title').val(data.title);
+                $('#main_target').val(data.title);
                 $('#sub_target1').val(data.sub1);
                 $('#sub_target2').val(data.sub2);
                 $('#sub_target3').val(data.sub3);
