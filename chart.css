@@ -8,17 +8,23 @@ body{
     align-items: center; 
     flex-direction: column;
     background-repeat: no-repeat;
-    size: cover;
+    background-size: cover;
 
     
 }
 header{
-    padding-top: 12%;
+    /* padding-top: 12%; */
     display: flex;
     justify-content: center;
     align-items: center; 
     /* background-color: honeydew; */
     width: 90vw;
+}
+.title{
+    width:60%
+}
+.list{
+    width:40%
 }
 main{
     /* background-color: honeydew; */
@@ -146,4 +152,7 @@ footer{
     align-items: center; 
     /* background-color: honeydew; */
     width:90vw;
+}
+h1{
+    font-size:64px;
 }

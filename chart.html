@@ -5,13 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="chart.css">
+    <link rel="stylesheet" href="./letterfx-master/jquery-letterfx.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./letterfx-master/tuxsudo.min.js"></script>
+    <script src="./letterfx-master/jquery-letterfx.min.js"></script>
+
     <title>MINDset</title>
 </head>
 
 <body>
     <header>
-        <ul>
+        <h1 class="title">Always Ask "Why me ?"</h1>
+        <ul class="list">
             <li id="clear">All Clear</li>
+            <li id="restart"><a href="./index.html">restart</a></li>
         </ul>
         <!-- <a class="chart" href="chart.html">chart</a> -->
     </header>
@@ -207,7 +214,7 @@
 
     </main>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script> -->
     <script>
         /////////////////////////////// main_target//////////////////////////////////
@@ -216,7 +223,7 @@
             $('textarea').keyup(function () {
                 // const text = $('#main_target').val();
                 const data = {
-                    title: $('#title').val(),
+
                     main: $('#main_target').val(),
                     sub1: $('#sub_target1').val(),
                     sub2: $('#sub_target2').val(),
@@ -309,7 +316,7 @@
             //2.clear クリックイベント
             $('#clear').on('click', function () {
                 localStorage.removeItem('memo');
-                $('#title').val('')
+
                 $('#main_target').val('')
                 $('#sub_target1').val('')
                 $('#sub_target2').val('')
@@ -400,8 +407,8 @@
                 const data = JSON.parse(jasonData);
                 console.log(data);
                 // $('#title').val(data.title);
-                $('#title').val(data.title);
-                $('#main_target').val(data.title);
+
+                $('#main_target').val(data.main);
                 $('#sub_target1').val(data.sub1);
                 $('#sub_target2').val(data.sub2);
                 $('#sub_target3').val(data.sub3);
@@ -484,7 +491,16 @@
                 $('#sub_8_8').val(data.sub_8_8);
             }
         });
-
+        $(function () {
+            $(".title").letterfx({
+                "fx": "fade",
+                "backwards": false,
+                "timing": 100,
+                "fx_duration": "350ms",
+                "letter_end": "restore",
+                "element_end": "restore"
+            });
+        });
     </script>
 </body>
 

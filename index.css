@@ -10,13 +10,14 @@ body{
     flex-direction: column;
     background-image: url(img/mind.png);
     background-repeat: no-repeat;
-    size: cover;
+    background-size: cover;
     
 }
 header{
     display: flex;
     justify-content: center;
     align-items: center; 
+    flex-direction: column;
     /* background-color: honeydew; */
     width: 90vw;
 }
@@ -24,7 +25,10 @@ header{
     width: 100%;
     /* background-color: honeydew; */
     font-size: 200%;
-    background-color:transparent
+    background-color:transparent;
+}
+.title1{
+    width: 80%;
 }
 main{
     /* background-color: honeydew; */
@@ -37,6 +41,13 @@ main{
     left: 10%;
     opacity: 0;
 }
+.main_title{
+    /* background-color: tomato; */
+    position: relative;
+    font: weight 1200;
+    background-color: aliceblue;
+}
+
 .main_target{
     background-color: tomato;
     position: relative;
@@ -121,18 +132,19 @@ ul{
     /* border-top: 1px solid #000000; */
     /* display:table;   */
     /* table-layout: fixed; */
-    width: 85%;
+    width: 60%;
     height: 80%;
     display: flex;
     justify-content: center;
     align-items: center; 
     /* flex-direction: column; */
+     background-color: steelblue;
 }
 
 li{
     list-style-type:none;
     border: 1px solid #666;
-    
+     background-color: steelblue;
     /* display:table-cell;  定義 */
     cursor: pointer;
     width: 30%;
@@ -153,13 +165,48 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center; 
-    padding-top: 5%;
-    width:90vw;
+    width:8vw;
+    background-color: steelblue;
 }
 .b{
     border: none;
-    background-image: url(img/next.jpg);
+    background-color:transparent;
+    font-size: 1.5em;
+    color: white;
+    padding-right: 5%;
+    padding-left: 5%;
+     
 }
+/* .btn{
+     background-color: steelblue;
+} */
 /* .navigate-anchor{
     font-size: 3em;
 } */
+
+h1{
+    font-size:64px;
+}
+.navigate-anchor{
+    color: white;
+}
+.last_time{
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+.title2{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    
+}
+.sub1{
+    text-align: left;
+    width: 100%;
+}
+.sub2{
+    text-align: left;
+    width: 0%;
+}

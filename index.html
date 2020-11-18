@@ -5,53 +5,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./letterfx-master/jquery-letterfx.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./letterfx-master/tuxsudo.min.js"></script>
+    <script src="./letterfx-master/jquery-letterfx.min.js"></script>
     <title>MINDset</title>
 </head>
 
 <body>
     <header>
-        <h1><textarea id="title" class="main_title" type="text" placeholder="TARGET" autofocus
-                style="border: none;"></textarea></h1>
+        <!-- Always Ask "Why me ?" -->
+        <!-- <p class="title" style="opacity: 1;"> -->
+
+        <h1 class="title">Always Ask "Why me ?"</h1>
+        <div id="academy">
+            <div>
+                <p class="title1">
+                    GOALを再設定することでなぜ今自分はコードを打っているのか。なぜ睡眠を削りながらでも頑張っているのか。なぜ学んでいるのかを再認識し、目的・目標を細分化し定量化することで、いつでも振り返りを行えるようにしましょう。目的を設定し、その目的に対して目標を８つ設定。その目標それぞれに対して、できるだけ定量化された目標を設定しましょう。
+                </p>
+                <div class="title2">
+                    <div class="sub1">
+                        <p class="sub_title">01 Cool,Geek,Act with Passion. </p>
+                        <p class="sub_title">02 Curiosity Drivers Us Forward.</p>
+                        <p class="sub_title">03 Devour Knowledge,Express Wisdom.</p>
+                        <p class="sub_title">04 DCAP Driver.Deploy or Die.</p>
+                        <p class="sub_title">05 Mission Finds True Buddy.</p>
+                        <p class="sub_title">06 Keep Your Eyes on the Prize,Hold on.</p>
+                        <p class="sub_title">07 Alwas Ask "Why me ?"</p>
+                    </div>
+                    <!-- <div class="sub2">
+                        <p>目的を設定。目標を８つ設定。その目標それぞれに対して、できるだけ定量化された目標を設定する。</p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- <span
+                style="position: relative; opacity: 1; display: inline-block; letter-spacing: 10px; transition-property: all; transition-duration: 1000ms; transition-timing-function: cubic-bezier(0.29, 0.35, 0.46, 1.2); background-color: transparent; transform-style: preserve-3d; transform: scale(1);">A</span>
+            <span
+                style="position: relative; opacity: 1; display: inline-block; letter-spacing: 10px; transition-property: all; transition-duration: 1000ms; transition-timing-function: cubic-bezier(0.29, 0.35, 0.46, 1.2); background-color: transparent; transform-style: preserve-3d; transform: scale(1);">l</span>
+            <span
+                style="position: relative; opacity: 1; display: inline-block; letter-spacing: 10px; transition-property: all; transition-duration: 1000ms; transition-timing-function: cubic-bezier(0.29, 0.35, 0.46, 1.2); background-color: transparent; transform-style: preserve-3d; transform: scale(1);">w</span>
+            <span
+                style="position: relative; opacity: 1; display: inline-block; letter-spacing: 10px; transition-property: all; transition-duration: 1000ms; transition-timing-function: cubic-bezier(0.29, 0.35, 0.46, 1.2); background-color: transparent; transform-style: preserve-3d; transform: scale(1);">a</span>
+            <span
+                style="position: relative; opacity: 1; display: inline-block; letter-spacing: 10px; transition-property: all; transition-duration: 1000ms; transition-timing-function: cubic-bezier(0.29, 0.35, 0.46, 1.2); background-color: transparent; transform-style: preserve-3d; transform: scale(1);">y</span>
+            <span
+                style="position: relative; opacity: 1; display: inline-block; letter-spacing: 10px; transition-property: all; transition-duration: 1000ms; transition-timing-function: cubic-bezier(0.29, 0.35, 0.46, 1.2); background-color: transparent; transform-style: preserve-3d; transform: scale(1);">s</span>
+            <span
+                style="position: relative; opacity: 1; display: inline-block; letter-spacing: 10px; transition-property: all; transition-duration: 1000ms; transition-timing-function: cubic-bezier(0.29, 0.35, 0.46, 1.2); background-color: transparent; transform-style: preserve-3d; transform: scale(1);"></span>
+            <span
+                style="position: relative; opacity: 1; display: inline-block; letter-spacing: 10px; transition-property: all; transition-duration: 1000ms; transition-timing-function: cubic-bezier(0.29, 0.35, 0.46, 1.2); background-color: transparent; transform-style: preserve-3d; transform: scale(1);">A</span>
+            <span
+                style="position: relative; opacity: 1; display: inline-block; letter-spacing: 10px; transition-property: all; transition-duration: 1000ms; transition-timing-function: cubic-bezier(0.29, 0.35, 0.46, 1.2); background-color: transparent; transform-style: preserve-3d; transform: scale(1);">s</span>
+            <span
+                style="position: relative; opacity: 1; display: inline-block; letter-spacing: 10px; transition-property: all; transition-duration: 1000ms; transition-timing-function: cubic-bezier(0.29, 0.35, 0.46, 1.2); background-color: transparent; transform-style: preserve-3d; transform: scale(1);">k</span>
+            <span
+                style="position: relative; opacity: 1; display: inline-block; letter-spacing: 10px; transition-property: all; transition-duration: 1000ms; transition-timing-function: cubic-bezier(0.29, 0.35, 0.46, 1.2); background-color: transparent; transform-style: preserve-3d; transform: scale(1);"></span>
+            <span
+                style="position: relative; opacity: 1; display: inline-block; letter-spacing: 10px; transition-property: all; transition-duration: 1000ms; transition-timing-function: cubic-bezier(0.29, 0.35, 0.46, 1.2); background-color: transparent; transform-style: preserve-3d; transform: scale(1);">"</span>
+            <span
+                style="position: relative; opacity: 1; display: inline-block; letter-spacing: 10px; transition-property: all; transition-duration: 1000ms; transition-timing-function: cubic-bezier(0.29, 0.35, 0.46, 1.2); background-color: transparent; transform-style: preserve-3d; transform: scale(1);">W</span>
+            <span
+                style="position: relative; opacity: 1; display: inline-block; letter-spacing: 10px; transition-property: all; transition-duration: 1000ms; transition-timing-function: cubic-bezier(0.29, 0.35, 0.46, 1.2); background-color: transparent; transform-style: preserve-3d; transform: scale(1);">h</span>
+            <span
+                style="position: relative; opacity: 1; display: inline-block; letter-spacing: 10px; transition-property: all; transition-duration: 1000ms; transition-timing-function: cubic-bezier(0.29, 0.35, 0.46, 1.2); background-color: transparent; transform-style: preserve-3d; transform: scale(1);">y</span>
+            <span
+                style="position: relative; opacity: 1; display: inline-block; letter-spacing: 10px; transition-property: all; transition-duration: 1000ms; transition-timing-function: cubic-bezier(0.29, 0.35, 0.46, 1.2); background-color: transparent; transform-style: preserve-3d; transform: scale(1);"></span>
+            <span
+                style="position: relative; opacity: 1; display: inline-block; letter-spacing: 10px; transition-property: all; transition-duration: 1000ms; transition-timing-function: cubic-bezier(0.29, 0.35, 0.46, 1.2); background-color: transparent; transform-style: preserve-3d; transform: scale(1);">m</span>
+            <span
+                style="position: relative; opacity: 1; display: inline-block; letter-spacing: 10px; transition-property: all; transition-duration: 1000ms; transition-timing-function: cubic-bezier(0.29, 0.35, 0.46, 1.2); background-color: transparent; transform-style: preserve-3d; transform: scale(1);">e</span>
+            <span
+                style="position: relative; opacity: 1; display: inline-block; letter-spacing: 10px; transition-property: all; transition-duration: 1000ms; transition-timing-function: cubic-bezier(0.29, 0.35, 0.46, 1.2); background-color: transparent; transform-style: preserve-3d; transform: scale(1);"></span>
+            <span
+                style="position: relative; opacity: 1; display: inline-block; letter-spacing: 10px; transition-property: all; transition-duration: 1000ms; transition-timing-function: cubic-bezier(0.29, 0.35, 0.46, 1.2); background-color: transparent; transform-style: preserve-3d; transform: scale(1);">?</span>
+            <span
+                style="position: relative; opacity: 1; display: inline-block; letter-spacing: 10px; transition-property: all; transition-duration: 1000ms; transition-timing-function: cubic-bezier(0.29, 0.35, 0.46, 1.2); background-color: transparent; transform-style: preserve-3d; transform: scale(1);"></span>
+            <span
+                style="position: relative; opacity: 1; display: inline-block; letter-spacing: 10px; transition-property: all; transition-duration: 1000ms; transition-timing-function: cubic-bezier(0.29, 0.35, 0.46, 1.2); background-color: transparent; transform-style: preserve-3d; transform: scale(1);">"</span> -->
         <!-- <h1><input id="title" class="main_title" type="text" placeholder="TARGET" autofocus style="border: none;"></h1> -->
         <ul>
 
             <li>
-                <div id="btn1"><input class="b" type="button" value="Next"
-                        onclick="document.getElementById('center_center').style.display='block';document.getElementById('btn1').style.display='none';document.getElementById('btn2').style.display='block';">
+                <div class="btn" id="btn1_1"><input class="b" type="button" value="Set a Goal"
+                        onclick="document.getElementById('main_title').style.display='block';document.getElementById('academy').style.display='none';
+                        document.getElementById('btn1_1').style.display='none';document.getElementById('btn1').style.display='block';">
                 </div>
-                <div id="btn2"><input class="b" type="button" value="Next"
+                <div class="btn" id="btn1"><input class="b" type="button" value="Next"
+                        onclick="document.getElementById('center_center').style.display='block';document.getElementById('main_title').style.display='none';
+                        document.getElementById('btn1').style.display='none';document.getElementById('btn2').style.display='block';">
+                </div>
+                <div class="btn" id="btn2"><input class="b" type="button" value="Next"
                         onclick="document.getElementById('top_center').style.display='block';document.getElementById('btn2').style.display='none';document.getElementById('btn3').style.display='block';">
                 </div>
-                <div id="btn3"><input class="b" type="button" value="Next"
+                <div class="btn" id="btn3"><input class="b" type="button" value="Next"
                         onclick="document.getElementById('top_left').style.display='block';document.getElementById('btn3').style.display='none';document.getElementById('btn4').style.display='block';">
                 </div>
-                <div id="btn4"><input class="b" type="button" value="Next"
+                <div class="btn" id="btn4"><input class="b" type="button" value="Next"
                         onclick="document.getElementById('top_right').style.display='block';document.getElementById('btn4').style.display='none';document.getElementById('btn5').style.display='block';">
                 </div>
-                <div id="btn5"><input class="b" type="button" value="Next"
+                <div class="btn" id="btn5"><input class="b" type="button" value="Next"
                         onclick="document.getElementById('center_left').style.display='block';document.getElementById('btn5').style.display='none';document.getElementById('btn6').style.display='block';">
                 </div>
-                <div id="btn6"><input class="b" type="button" value="Next"
+                <div class="btn" id="btn6"><input class="b" type="button" value="Next"
                         onclick="document.getElementById('center_right').style.display='block';document.getElementById('btn6').style.display='none';document.getElementById('btn7').style.display='block';">
                 </div>
-                <div id="btn7"><input class="b" type="button" value="Next"
+                <div class="btn" id="btn7"><input class="b" type="button" value="Next"
                         onclick="document.getElementById('bottom_center').style.display='block';document.getElementById('btn7').style.display='none';document.getElementById('btn8').style.display='block';">
                 </div>
-                <div id="btn8"><input class="b" type="button" value="Next"
+                <div class="btn" id="btn8"><input class="b" type="button" value="Next"
                         onclick="document.getElementById('bottom_left').style.display='block';document.getElementById('btn8').style.display='none';document.getElementById('btn9').style.display='block';">
                 </div>
-                <div id="btn9"><input class="b" type="button" value="Next"
+                <div class="btn" id="btn9"><input class="b" type="button" value="Next"
                         onclick="document.getElementById('bottom_right').style.display='block';document.getElementById('btn9').style.display='none';document.getElementById('btn10').style.display='block';">
                 </div>
-                <div id="btn10">
+                <div class="btn" id="btn10">
                     <article><a href="chart.html" class="navigate-anchor">NEXT</a></article>
                 </div>
-            <li id="clear">All Clear</li>
+            <li class="b" id="clear">All Clear</li>
             </li>
         </ul>
+        <div class="main_title" id="title1"><textarea id="main_title" class="main_title"
+                placeholder="GOALを決める"></textarea></div>
+
     </header>
     <main id="data">
         <div class="box">
+
             <!-- 表の上の列-->
             <table id="top_left">
                 <!-- 表の上の左-->
@@ -150,7 +230,7 @@
                     <td id="sub4" class="sub_target4"><textarea id="sub_target4" class="sub_target4"
                             placeholder="目標"></textarea>
                     </td>
-                    <td class="main_target"><textarea id="main_target" class="main_target" placeholder="目的"
+                    <td id="main1" class="main_target"><textarea id="main_target" class="main_target" placeholder="目的"
                             autofocus></textarea>
                     </td>
                     <td id="sub5" class="sub_target5"><textarea id="sub_target5" class="sub_target5"
@@ -275,11 +355,18 @@
         </div> -->
 
     </main>
+    <footer><a href="./chart.html" class="last_time">前回の続き</a></footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script> -->
+    <!-- <script type="text/javascript">
+        $('.title').textAnimation();
+    </script> -->
+
     <script>
 
+
+
+        document.getElementById("main_title").style.display = "none";
         document.getElementById("center_center").style.display = "none";
         document.getElementById("top_left").style.display = "none";
         document.getElementById("top_center").style.display = "none";
@@ -290,6 +377,7 @@
         document.getElementById("bottom_center").style.display = "none";
         document.getElementById("bottom_right").style.display = "none";
 
+        // document.getElementById("main1").style.display = "none";
         // document.getElementById("sub1").style.display = "none";
         // document.getElementById("sub2").style.display = "none";
         // document.getElementById("sub3").style.display = "none";
@@ -299,6 +387,7 @@
         // document.getElementById("sub7").style.display = "none";
         // document.getElementById("sub8").style.display = "none";
 
+        document.getElementById("btn1").style.display = "none";
         document.getElementById("btn2").style.display = "none";
         document.getElementById("btn3").style.display = "none";
         document.getElementById("btn4").style.display = "none";
@@ -318,8 +407,8 @@
             $('textarea').keyup(function () {
                 // const text = $('#main_target').val();
                 const data = {
-                    title: $('#title').val(),
-                    main: $('#main_target').val(),
+                    title: $('#main_title').val(),
+                    main: $('#main_title').val(),
                     sub1: $('#sub_target1').val(),
                     sub2: $('#sub_target2').val(),
                     sub3: $('#sub_target3').val(),
@@ -411,7 +500,8 @@
             //2.clear クリックイベント
             $('#clear').on('click', function () {
                 localStorage.removeItem('memo');
-                $('#title').val('')
+
+                $('#main_title').val('')
                 $('#main_target').val('')
                 $('#sub_target1').val('')
                 $('#sub_target2').val('')
@@ -496,12 +586,13 @@
                 $('#sub_8_8').val('')
             });
             //3.ページ読み込み：保存データ取得表示
+
             if (localStorage.getItem('memo')) {
                 const jasonData = localStorage.getItem('memo');
                 console.log(jasonData);
                 const data = JSON.parse(jasonData);
                 console.log(data);
-                $('#title').val(data.title);
+                $('#main_title').val(data.title);
                 $('#main_target').val(data.title);
                 $('#sub_target1').val(data.sub1);
                 $('#sub_target2').val(data.sub2);
@@ -585,6 +676,38 @@
                 $('#sub_8_8').val(data.sub_8_8);
             }
         });
+        $(function () {
+            $(".title").letterfx({
+                "fx": "fade",
+                "backwards": false,
+                "timing": 100,
+                "fx_duration": "350ms",
+                "letter_end": "restore",
+                "element_end": "restore"
+            });
+        });
+        $(function () {
+            $(".title1").letterfx({
+                "fx": "fade",
+                "backwards": false,
+                "timing": 100,
+                "fx_duration": "350ms",
+                "letter_end": "restore",
+                "element_end": "restore"
+            });
+        });
+        $(function () {
+            $(".sub_title").letterfx({
+                "fx": "fade",
+                "backwards": false,
+                "timing": 100,
+                "fx_duration": "350ms",
+                "letter_end": "restore",
+                "element_end": "restore"
+            });
+        });
+
+
 
     </script>
 </body>
