@@ -21,7 +21,9 @@ header{
     width: 90vw;
 }
 .title{
-    width:50%
+    width:50%;
+     padding-left: 10%;
+    
 }
 .list{
     width:50%
