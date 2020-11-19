@@ -17,14 +17,20 @@
         <!-- Always Ask "Why me ?" -->
         <!-- <p class="title" style="opacity: 1;"> -->
 
-        <h1 class="title">Always Ask "Why me ?"</h1>
+        <h1 id="ask" class="title">Always Ask "Why me ?"</h1>
         <div id="academy">
             <div>
-                <p class="title1">
+                <p id="title" class="title1">
                     GOALを再設定することでなぜ今自分はコードを打っているのか。なぜ睡眠を削りながらでも頑張っているのか。なぜ学んでいるのかを再認識し、目的・目標を細分化し定量化することで、いつでも振り返りを行えるようにしましょう。目的を設定し、その目的に対して目標を８つ設定。その目標それぞれに対して、できるだけ定量化された目標を設定しましょう。
                 </p>
+                <p id="stop_title" class="stop_title" style="display: none;">
+
+                    　ダメです。
+                    Why me ? あなたは自分で何かを求めて、ここにやってきたのではないのですか？
+                    なんとなくでも構いません。目的を持って行動することに意味があります。めんどくさくても、設定してください。それが絶対にあなたのためになります。今のクソッタレな人生なままじゃ何も変わらず、何をしても物足らないと感じたままの人生になります。まず、一つ行動に移しましょう。'悩み→迷い'に変えることが重要です。何も選択肢がない状況で何をしたらいいのかわからないから選択肢を持った上でなにをしよう？というふうに自分を変えるためのものです。もう1度言います、Why
+                    me ? です。将来,私に感謝してることでしょう。では、目的を設定してください。クソッタレな人生から抜け出せることを心から祈っています。 </p>
                 <div class="title2">
-                    <div class="sub1">
+                    <div id="geek" class="sub1">
                         <p class="sub_title">01 Cool,Geek,Act with Passion. </p>
                         <p class="sub_title">02 Curiosity Drivers Us Forward.</p>
                         <p class="sub_title">03 Devour Knowledge,Express Wisdom.</p>
@@ -32,6 +38,9 @@
                         <p class="sub_title">05 Mission Finds True Buddy.</p>
                         <p class="sub_title">06 Keep Your Eyes on the Prize,Hold on.</p>
                         <p class="sub_title">07 Alwas Ask "Why me ?"</p>
+                    </div>
+                    <div class="btn" id="stop"><input class="s" type="button" value="やっぱやめとこ。"
+                            onclick="document.getElementById('geek').style.display='none';document.getElementById('ask').style.display='none';document.getElementById('stop_title').style.display='block';document.getElementById('footer').style.display='none';document.getElementById('title').style.display='none';document.getElementById('stop').style.display='none';">
                     </div>
                     <!-- <div class="sub2">
                         <p>目的を設定。目標を８つ設定。その目標それぞれに対して、できるだけ定量化された目標を設定する。</p>
@@ -355,7 +364,7 @@
         </div> -->
 
     </main>
-    <footer><a href="./chart.html" class="last_time">前回の続き</a></footer>
+    <footer id="footer"><a href="./chart.html" class="last_time">前回の続き</a></footer>
 
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script> -->
     <!-- <script type="text/javascript">
@@ -706,6 +715,16 @@
                 "element_end": "restore"
             });
         });
+        // $(function () {
+        //     $(".stop_title").letterfx({
+        //         "fx": "fade",
+        //         "backwards": false,
+        //         "timing": 100,
+        //         "fx_duration": "350ms",
+        //         "letter_end": "restore",
+        //         "element_end": "restore"
+        //     });
+        // });
 
 
 

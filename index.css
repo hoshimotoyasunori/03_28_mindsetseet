@@ -49,7 +49,7 @@ main{
 }
 
 .main_target{
-    background-color: tomato;
+    background-color: whitesmoke;
     position: relative;
     opacity: 1;
     font: weight 1200;
@@ -177,6 +177,20 @@ footer{
     padding-left: 5%;
      
 }
+.s{
+    border: none;
+    background-color:transparent;
+    font-size: 1.5em;
+    color:black;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-top: 90%;
+     
+}
+.s:hover{
+    background: #0066CC;
+ 
+}
 /* .btn{
      background-color: steelblue;
 } */
@@ -209,4 +223,14 @@ h1{
 .sub2{
     text-align: left;
     width: 0%;
+}
+.stp{
+color: black;
+height: 100%;
+text-align: end;
+}
+.stop_title{
+    width: 90%;
+    font-size: 24px;
+    padding-top: 4%;
 }
