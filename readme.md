@@ -12,4 +12,4 @@
 
 - その中でも自分が使いたいシートに近づいていると思うので、良かったと思う
 
-# https://hoshimotoyasunori.github.io/03_28_memo/
+# https://hoshimotoyasunori.github.io/03_28_mindset/
