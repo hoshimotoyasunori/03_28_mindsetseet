@@ -98,14 +98,14 @@
             <li>
                 <div class="btn" id="btn1_1"><input class="b" type="button" value="Set a Goal"
                         onclick="document.getElementById('main_title').style.display='block';document.getElementById('academy').style.display='none';
-                        document.getElementById('btn1_1').style.display='none';document.getElementById('btn1').style.display='block';">
+                        document.getElementById('btn1_1').style.display='none';document.getElementById('btn1').style.display='block';alert('GOAL(目的)を設定してください');">
                 </div>
                 <div class="btn" id="btn1"><input class="b" type="button" value="Next"
                         onclick="document.getElementById('center_center').style.display='block';document.getElementById('main_title').style.display='none';
-                        document.getElementById('btn1').style.display='none';document.getElementById('btn2').style.display='block';">
+                        document.getElementById('btn1').style.display='none';document.getElementById('btn2').style.display='block';alert('目的を達成するための目標を８つ設定してください');">
                 </div>
                 <div class="btn" id="btn2"><input class="b" type="button" value="Next"
-                        onclick="document.getElementById('top_center').style.display='block';document.getElementById('btn2').style.display='none';document.getElementById('btn3').style.display='block';">
+                        onclick="document.getElementById('top_center').style.display='block';document.getElementById('btn2').style.display='none';document.getElementById('btn3').style.display='block';alert('次のステップです。目標に対して定量化されたtargetを8つ設定してください');">
                 </div>
                 <div class="btn" id="btn3"><input class="b" type="button" value="Next"
                         onclick="document.getElementById('top_left').style.display='block';document.getElementById('btn3').style.display='none';document.getElementById('btn4').style.display='block';">
@@ -129,13 +129,15 @@
                         onclick="document.getElementById('bottom_right').style.display='block';document.getElementById('btn9').style.display='none';document.getElementById('btn10').style.display='block';">
                 </div>
                 <div class="btn" id="btn10">
-                    <article><a href="chart.html" class="navigate-anchor">NEXT</a></article>
+                    <article><a href="chart.html" class="navigate-anchor"
+                            onclick="alert('完成です。これを期に価値のある日々を過ごせることを祈っております。');">NEXT</a>
+                    </article>
                 </div>
             <li class="b" id="clear">All Clear</li>
             </li>
         </ul>
         <div class="main_title" id="title1"><textarea id="main_title" name="target" class="main_title"
-                placeholder="GOALを決める"></textarea>
+                placeholder="GOAL(目的)を決める"></textarea>
         </div>
 
     </header>
