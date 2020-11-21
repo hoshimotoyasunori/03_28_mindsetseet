@@ -376,7 +376,7 @@
 
     <script>
 
-
+        // console.log(innerHTML.main_target);
         document.getElementById("main_title").style.display = "none";
         document.getElementById("center_center").style.display = "none";
         document.getElementById("top_left").style.display = "none";
@@ -507,7 +507,145 @@
                 console.log(jasonData);
                 localStorage.setItem('memo', jasonData);
                 // localStorage.setItem('memo', text);
+                // window.onload = function () {
+                getValue();
+                var $formObject = document.getElementById("main_title");
+                for (var $i = 0; $i < $formObject.length; $i++) {
+                    $formObject.elements[$i].onkeyup = function () {
+                        getValue();
+                    };
+                    $formObject.elements[$i].onchange = function () {
+                        getValue();
+                    };
+                }
+                document.getElementById("main_target").innerHTML = $formObject.length;
+                // }
+                function getValue() {
+                    var $formObject = document.getElementById("main_title").value;
+                    console.log($formObject);
+                    document.getElementById("main_target").value = $formObject;
+                }
+                // getValue();
+                // var $formObject = document.getElementById("sub_target1");
+                // for (var $i = 0; $i < $formObject.length; $i++) {
+                //     $formObject.elements[$i].onkeyup = function () {
+                //         getValue();
+                //     };
+                //     $formObject.elements[$i].onchange = function () {
+                //         getValue();
+                //     };
+                // }
+                // document.getElementById("sub_1").innerHTML = $formObject.length;
+                // // }
+                // function getValue() {
+                //     var $formObject = document.getElementById("sub_target1").value;
+                //     console.log($formObject);
+                //     document.getElementById("sub_1").value = $formObject;
+                // }
+                // getValue();
+                // var $formObject = document.getElementById("sub_target3");
+                // for (var $i = 0; $i < $formObject.length; $i++) {
+                //     $formObject.elements[$i].onkeyup = function () {
+                //         getValue();
+                //     };
+                //     $formObject.elements[$i].onchange = function () {
+                //         getValue();
+                //     };
+                // }
+                // document.getElementById("sub_3").innerHTML = $formObject.length;
+                // // }
+                // function getValue() {
+                //     var $formObject = document.getElementById("sub_target3").value;
+                //     console.log($formObject);
+                //     document.getElementById("sub_3").value = $formObject;
+                // }
+                // getValue();
+                // var $formObject = document.getElementById("sub_target4");
+                // for (var $i = 0; $i < $formObject.length; $i++) {
+                //     $formObject.elements[$i].onkeyup = function () {
+                //         getValue();
+                //     };
+                //     $formObject.elements[$i].onchange = function () {
+                //         getValue();
+                //     };
+                // }
+                // document.getElementById("sub_4").innerHTML = $formObject.length;
+                // // }
+                // function getValue() {
+                //     var $formObject = document.getElementById("sub_target4").value;
+                //     console.log($formObject);
+                //     document.getElementById("sub_4").value = $formObject;
+                // }
+                // getValue();
+                // var $formObject = document.getElementById("sub_target5");
+                // for (var $i = 0; $i < $formObject.length; $i++) {
+                //     $formObject.elements[$i].onkeyup = function () {
+                //         getValue();
+                //     };
+                //     $formObject.elements[$i].onchange = function () {
+                //         getValue();
+                //     };
+                // }
+                // document.getElementById("sub_5").innerHTML = $formObject.length;
+                // // }
+                // function getValue() {
+                //     var $formObject = document.getElementById("sub_target5").value;
+                //     console.log($formObject);
+                //     document.getElementById("sub_5").value = $formObject;
+                // }
+                // getValue();
+                // var $formObject = document.getElementById("sub_target6");
+                // for (var $i = 0; $i < $formObject.length; $i++) {
+                //     $formObject.elements[$i].onkeyup = function () {
+                //         getValue();
+                //     };
+                //     $formObject.elements[$i].onchange = function () {
+                //         getValue();
+                //     };
+                // }
+                // document.getElementById("sub_6").innerHTML = $formObject.length;
+                // // }
+                // function getValue() {
+                //     var $formObject = document.getElementById("sub_target6").value;
+                //     console.log($formObject);
+                //     document.getElementById("sub_6").value = $formObject;
+                // }
+                // getValue();
+                // var $formObject = document.getElementById("sub_target7");
+                // for (var $i = 0; $i < $formObject.length; $i++) {
+                //     $formObject.elements[$i].onkeyup = function () {
+                //         getValue();
+                //     };
+                //     $formObject.elements[$i].onchange = function () {
+                //         getValue();
+                //     };
+                // }
+                // document.getElementById("sub_7").innerHTML = $formObject.length;
+                // // }
+                // function getValue() {
+                //     var $formObject = document.getElementById("sub_target7").value;
+                //     console.log($formObject);
+                //     document.getElementById("sub_7").value = $formObject;
+                // }
+                // getValue();
+                // var $formObject = document.getElementById("sub_target8");
+                // for (var $i = 0; $i < $formObject.length; $i++) {
+                //     $formObject.elements[$i].onkeyup = function () {
+                //         getValue();
+                //     };
+                //     $formObject.elements[$i].onchange = function () {
+                //         getValue();
+                //     };
+                // }
+                // document.getElementById("sub_8").innerHTML = $formObject.length;
+                // // }
+                // function getValue() {
+                //     var $formObject = document.getElementById("sub_target8").value;
+                //     console.log($formObject);
+                //     document.getElementById("sub_8").value = $formObject;
+                // }
             });
+
             //2.clear クリックイベント
             $('#clear').on('click', function () {
                 localStorage.removeItem('memo');
