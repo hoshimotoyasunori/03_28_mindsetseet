@@ -86,12 +86,14 @@ main{
 }
 table{
     width: calc(100% / 3);
+    padding: 1%;
 }
 td{
     background-color: ghostwhite;
     border: solid 0.1px;
     width: calc(100% / 9) ;
     height: calc(100% / 9) ;
+    border-radius: 20px;
 }
 table:hover{
     background: #0066CC;
@@ -112,6 +114,7 @@ textarea {
   border: none;
   font-size: 10px;
   text-align: center;
+  border-radius: 20px;
 
 }
 

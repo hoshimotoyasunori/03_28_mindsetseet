@@ -313,6 +313,43 @@
                 console.log(jasonData);
                 localStorage.setItem('memo', jasonData);
                 // localStorage.setItem('memo', text);
+
+
+
+                getValue();
+                var $formObject = document.getElementById("sub_target1");
+                for (var $i = 0; $i < $formObject.length; $i++) {
+                    $formObject.elements[$i].onkeyup = function () {
+                        getValue();
+                    };
+                    $formObject.elements[$i].onchange = function () {
+                        getValue();
+                    };
+                }
+                document.getElementById("sub_1").innerHTML = $formObject.length;
+                // }
+                function getValue() {
+                    var $formObject = document.getElementById("sub_target1").value;
+                    console.log($formObject);
+                    document.getElementById("sub_1").value = $formObject;
+                }
+                getValue();
+                var $formObject = document.getElementById("sub_target2");
+                for (var $i = 0; $i < $formObject.length; $i++) {
+                    $formObject.elements[$i].onkeyup = function () {
+                        getValue();
+                    };
+                    $formObject.elements[$i].onchange = function () {
+                        getValue();
+                    };
+                }
+                document.getElementById("sub_2").innerHTML = $formObject.length;
+                // }
+                function getValue() {
+                    var $formObject = document.getElementById("sub_target2").value;
+                    console.log($formObject);
+                    document.getElementById("sub_2").value = $formObject;
+                }
             });
             //2.clear クリックイベント
             $('#clear').on('click', function () {
